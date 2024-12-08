@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1C1C1C;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    width: 40%;
+    max-height: 100%;
+    min-height: 90%;
+    background-color: #F4F4F4;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    background-color: #6943FF;
+    color: #F4F4F4;
+    align-items: center;
+    justify-content: center;
+}
+
+#header h1, input, button {
+    margin: 20px auto;
+}
+
+#input-num {
+    color: #ffffff;
+    background-color: #6943FF;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    font-size: 3rem;
+    font-weight: 900;
+    width: 20%;
+    text-align: center;
+    outline: none;
+}
+
+#input-num::placeholder {
+    color: #ffffff;
+    opacity: 0.4;
+}
+
+#convert-btn {
+    background-color: #ffffff;
+    color: #3D3D3D;
+    width: 20%;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#converts {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+}
+
+#converts .length, .volume, .mass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #353535;
+    margin: 20px;
+    padding: 20px;
+    line-height: 2;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #5A537B;
+}
+
+@media screen and (max-width: 1200px) {
+    #container {
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    #header {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    #header #input-num {
+        width: 40%;
+        height: 100px
+    }
+
+    #header #convert-btn {
+        width: 40%;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    #converts .length, .volume, .mass {
+        padding: 30px 0;
+        line-height: 2;
+        
+    }
+}
+ 
